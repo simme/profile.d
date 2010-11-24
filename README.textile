@@ -1,0 +1,76 @@
+h1. My Bash Profile
+
+This is the bash profile I use across all my macs and some of my servers. Its pretty general and can be used on almost any machine. This is all really heavily influenced by "Mat Schaffer":https://github.com/matschaffer/profile and the mess of peeps that have forked and contributed to his profile. My needs started getting too far from what he was doing so I pulled over a bunch of stuff and made it more my own.
+
+"The Bash Shell Startup Files":http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html
+
+h2. Some Stuff You Should Know
+
+* Things that are specific to individual flavors are separated into flavor specific directories. (e.g. Linux, Darwin).
+* Some assumptions are made about where applications are installed. You may need to change those parts for yourself. I've made notes in the "Other Jawns Installed":#other-jawns-installed section of this page.
+
+h2(#other-jawns-installed). Other Jawns Installed
+
+This is my *OSX Post Install Guide*. First comes first, run your updates.
+
+h3. Settings
+
+h3. Apps
+
+* Xcode
+
+* Macports
+* Homebrew
+
+* PeepOpen
+
+* DropBox
+
+* TextMate
+
+* FireFox 3.5.14
+* FireFox 3.6.11
+* Chrome
+
+h2. I Wanna Try These Out
+
+* "BetterTouchTool":http://boastr.net/
+* "Choosy":http://www.choosyosx.com/
+* "LaunchBar":http://www.obdev.at/products/launchbar/index.html
+* "MailPlane":http://mailplaneapp.com/
+* "Skitch":http://skitch.com/
+
+* "OSX Post Install Guide":http://jasonseifer.com/2010/05/05/osx-post-install-guide-4
+
+* "Commander":https://github.com/visionmedia/commander
+
+h2. Pork
+
+<pre>
+              ___
+              ',_`""\        .---,
+                 \   :-""``/`    |
+                  `;'     //`\   /
+                  /   __     |   ('.
+                 |_ ./O)\     \  `) \
+                _/-.    `      `"`  |`-.
+            .-=; `                  /   `-.
+           /o o \   ,_,           .        '.
+           L._._;_.-'           .            `'-.
+             `'-.`             '                 `'-.
+                 `.         '                        `-._
+                   '-._. -'                              '.
+                      \                                    `\
+                       |                                     \
+                       |    |                                 ;   _.
+                       \    |           |                     |-.(( 
+                        ;.  \           /    /                |-.`\)
+                        | '. ;         /    |                 |(_) )
+                        |   \ \       /`    |                 ;'--'
+                         \   '.\    /`      |                /
+                          |   /`|  ;        \               /
+                          |  |  |  |-._      '.           .'
+                          /  |  |  |__.`'---"_;'-.     .-'
+                         //__/  /  |    .-'``     _.-'`
+                               //__/   //___.--''`
+</pre>
