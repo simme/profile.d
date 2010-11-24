@@ -1,0 +1,2 @@
+# Tab completion from the contents of .ssh/known_hosts
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed 's/,.*//g' | sed 's/\[//g '| sed 's/\\]:[0-9]*//g' | uniq | grep -v "\["`;)" ssh
