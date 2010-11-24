@@ -1,0 +1,44 @@
+[user]
+	email = tim.crowe@timmyfury.com
+	name = Tim Crowe
+[core]
+	editor = mate -w
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	pu = push
+	pl = pull
+	pub = "!f() { git push ${1:-origin} `git symbolic-ref HEAD`; }; f"
+	br = branch
+	df = diff
+	lg = log -p
+	who = shortlog -s --
+	edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; mate `f`"
+	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+	whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+	whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+	prune-all = !git remote | xargs -n 1 git remote prune
+	serve = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+	kcon = !gitk --left-right HEAD...MERGE_HEAD
+	changes=diff --name-status -r
+	diffstat=diff --stat -r
+	lc = log ORIG_HEAD.. --stat --no-merges
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow 
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+	renamed = pink
