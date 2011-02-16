@@ -1,8 +1,3 @@
-[user]
-	email = kfitzgerald@gmail.com
-	name = Keith Fitzgerald
-[core]
-	editor = mate -w
 [alias]
 	co = checkout
 	ci = commit
